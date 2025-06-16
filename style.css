@@ -1,0 +1,168 @@
+/* #380c5d */
+body::-webkit-scrollbar {
+  display:none;
+}
+
+html {
+    height: 100%;
+    width: 100vw;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    min-width: 100vw;
+    background-color: #748B75;
+    color: #f5fbef;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav {
+    position:relative;
+    width: 100vw;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    background-color:#f5fbef;
+    padding: 2px;
+    z-index: 2;
+  }
+  
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul  {
+    width: 100%;
+    list-style: none;
+    justify-content:right;
+    display: flex;
+  }
+  
+  
+  nav li {
+    display: inline-block;
+    height: 48px;
+  }
+  nav li:nth-child(3){
+    margin-right: auto;
+  }
+  
+  
+  nav a {
+    height: 100%;
+    padding: 0 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #748B75;
+  }
+  
+  nav a:hover {
+    color: #5D6E5E;
+    text-decoration: none;
+    transition: .3s easy;
+  }
+
+  .arrowOut {
+    position:fixed;
+    bottom: 10px;
+    left: 50vw;
+    transform: translateX(-50%);
+    width: 35px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 20px;
+    align-items: center;
+    background-color: #f5fbef;
+    color:#748B75;
+  }
+  .arrowIn {
+    bottom: inherit;
+    left: inherit;
+    height: 45px;
+    width: 35px;
+    border-radius: 20px;
+    align-items: center;
+    background-color: #748B75;
+    color:#f5fbef;
+    
+  }
+
+
+  
+ /* ------------------Home Css ------------------*/
+
+#home{
+  background-color: #748B75;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+
+}
+
+.arrowOut {
+    position:fixed;
+    bottom: 10px;
+    left: 50vw;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 20px;
+    align-items: center;
+    background-color: #f5fbef;
+    color:#748B75;
+  }
+  .arrowIn {
+    bottom: inherit;
+    left: inherit;
+    height: 45px;
+    width: 30px;
+    border-radius: 20px;
+    align-items: center;
+    background-color: #748B75;
+    color:#f5fbef;
+    
+  }
+.arrow1{
+  position: fixed;
+  bottom:15px;
+
+}
+.arrow2{
+  position: fixed;
+  top: 15px;
+
+}
+/* ------------------about Css ------------------*/
+
+#aboutme , #mywork{
+  background-color: #5D6E5E;
+  min-height: 100vh;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+.aboutintrocont{
+  display:flex;
+}
+
+
+#myskills , #careers{
+  background-color: #748B75;
+  min-height: 100vh;
+  height: 100vw;
+  scroll-snap-align: start;
+}
+
+/* ------------------My Skills Css ------------------*/
+
+
+footer{
+  background-color:#f5fbef;
+  color:#5D6E5E;
+}
+
+
+
