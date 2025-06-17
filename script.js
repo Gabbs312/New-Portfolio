@@ -9,7 +9,9 @@ const sections = document.querySelectorAll('.page-section');
       currentSectionIndex = index;
     }
   }
-
+  document.querySelector('.harrow').addEventListener('click', () => {
+    scrollToSection(currentSectionIndex + 1);
+  });
   document.querySelector('.arrow2').addEventListener('click', () => {
     scrollToSection(currentSectionIndex + 1);
   });

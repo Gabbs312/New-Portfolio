@@ -1,12 +1,15 @@
 /* #380c5d */
+/* ------------------Nav bar ------------------*/
 body::-webkit-scrollbar {
   display:none;
+  scroll-behavior: smooth;
 }
 
 html {
     height: 100%;
     width: 100vw;
     scroll-behavior: smooth;
+
   }
   
   body {
@@ -44,7 +47,7 @@ html {
     display: inline-block;
     height: 48px;
   }
-  nav li:nth-child(3){
+  nav li:nth-child(2){
     margin-right: auto;
   }
   
@@ -64,31 +67,6 @@ html {
     transition: .3s easy;
   }
 
-  .arrowOut {
-    position:fixed;
-    bottom: 10px;
-    left: 50vw;
-    transform: translateX(-50%);
-    width: 35px;
-    height: 45px;
-    padding: 5px;
-    border-radius: 20px;
-    align-items: center;
-    background-color: #f5fbef;
-    color:#748B75;
-  }
-  .arrowIn {
-    bottom: inherit;
-    left: inherit;
-    height: 45px;
-    width: 35px;
-    border-radius: 20px;
-    align-items: center;
-    background-color: #748B75;
-    color:#f5fbef;
-    
-  }
-
 
   
  /* ------------------Home Css ------------------*/
@@ -101,41 +79,147 @@ html {
   min-height: 100vh;
 
 }
+.home{
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.home-cont{
+  margin-top:3%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100vw;
+  
+}
 
-.arrowOut {
-    position:fixed;
-    bottom: 10px;
+
+.robot{
+  background-color: #e1ecde;
+  border-radius:100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.column5 {
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  flex-basis: 100%;
+  display: flex;
+}
+.card ,.card1 {
+  width: 100%;
+  padding: 10px;
+}
+
+.card1{
+  margin-left:3%;
+  display: flex;
+  justify-content: left; 
+  align-items: center;    
+  height: 100%;            
+}
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+  color: #f5fbef; 
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typing {
+  position:relative;
+  top:6px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(6, end), forward infinite;
+
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 6ch; 
+  }
+}
+
+.downloadbtn{
+  border-radius: 2px;
+  background-color: #5D6E5E;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  color: #f5fbef;
+  padding: 8px;
+  text-decoration: none;
+}
+.downloadbtn:hover{
+  background-color: #f5fbef;
+  color: #5D6E5E;
+  transition-duration: 1s;
+}
+.harrow{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.harrowOut {
+    position:absolute;
+    bottom:5px;
     left: 50vw;
     transform: translateX(-50%);
-    width: 30px;
-    height: 45px;
+    width: 35px;
+    height: 25px;
     padding: 5px;
     border-radius: 20px;
     align-items: center;
     background-color: #f5fbef;
     color:#748B75;
   }
-  .arrowIn {
+
+.harrowIn {
     bottom: inherit;
     left: inherit;
-    height: 45px;
-    width: 30px;
+    height: 25px;
+    width: 35px;
     border-radius: 20px;
     align-items: center;
     background-color: #748B75;
-    color:#f5fbef;
-    
-  }
-.arrow1{
-  position: fixed;
-  bottom:15px;
+    color:#f5fbef; 
+}
+
+.harrow2{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top:-11px;
+  
 
 }
-.arrow2{
-  position: fixed;
-  top: 15px;
 
-}
 /* ------------------about Css ------------------*/
 
 #aboutme , #mywork{
@@ -148,6 +232,55 @@ html {
   display:flex;
 }
 
+
+.arrow{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.arrowOut {
+    position:absolute;
+    margin-bottom: 10px;
+    left: 50vw;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 20px;
+    align-items: center;
+    background-color: #f5fbef;
+    color:#748B75;
+  }
+
+.arrowIn {
+    bottom: inherit;
+    left: inherit;
+    height: 45px;
+    width: 30px;
+    border-radius: 20px;
+    align-items: center;
+    background-color: #748B75;
+    color:#f5fbef; 
+}
+
+.arrow1{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom:15px;
+
+}
+.arrow2{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top:15px;
+
+}
 
 #myskills , #careers{
   background-color: #748B75;
