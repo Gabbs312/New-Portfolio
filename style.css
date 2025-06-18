@@ -1,4 +1,6 @@
 /* #380c5d */
+
+
 /* ------------------Nav bar ------------------*/
 body::-webkit-scrollbar {
   display:none;
@@ -7,15 +9,16 @@ body::-webkit-scrollbar {
 
 html {
     height: 100%;
-    width: 100vw;
+    width: 100%;
+    max-width: 100%;
     scroll-behavior: smooth;
 
   }
   
   body {
-    min-width: 100vw;
+    width: 100%;
+    max-width: 100%;
     background-color: #748B75;
-    color: #f5fbef;
     padding: 0;
     margin: 0;
   }
@@ -76,7 +79,7 @@ html {
   min-height: 100vh;
   height: 100%;
   width: 100%;
-  min-height: 100vh;
+  color: #f5fbef
 
 }
 .home{
@@ -85,6 +88,7 @@ html {
   width: 100vw;
   margin: 0;
   padding: 0;
+  
 }
 
 .home-cont{
@@ -111,7 +115,7 @@ html {
   flex-basis: 100%;
   display: flex;
 }
-.card ,.card1 {
+.card-h ,.card1 {
   width: 100%;
   padding: 10px;
 }
@@ -123,7 +127,7 @@ html {
   align-items: center;    
   height: 100%;            
 }
-.card{
+.card-h{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,28 +191,28 @@ html {
   padding: 0;
 }
 .harrowOut {
-    position:absolute;
-    bottom:5px;
-    left: 50vw;
-    transform: translateX(-50%);
-    width: 35px;
-    height: 25px;
-    padding: 5px;
-    border-radius: 20px;
-    align-items: center;
-    background-color: #f5fbef;
-    color:#748B75;
+  position:absolute;
+  bottom:5px;
+  left: 50vw;
+  transform: translateX(-50%);
+  width: 35px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 20px;
+  align-items: center;
+  background-color: #f5fbef;
+  color:#748B75;
   }
 
 .harrowIn {
-    bottom: inherit;
-    left: inherit;
-    height: 25px;
-    width: 35px;
-    border-radius: 20px;
-    align-items: center;
-    background-color: #748B75;
-    color:#f5fbef; 
+  bottom: inherit;
+  left: inherit;
+  height: 25px;
+  width: 35px;
+  border-radius: 20px;
+  align-items: center;
+  background-color: #748B75;
+  color:#f5fbef; 
 }
 
 .harrow2{
@@ -217,19 +221,19 @@ html {
   transform: translateX(-50%);
   margin-top:-11px;
   
-
 }
+
+
 
 /* ------------------about Css ------------------*/
 
 #aboutme{
   background-color: #5D6E5E;
+  justify-content: center;
   min-height: 100vh;
   height: 100%;
-  scroll-snap-align: start;
-  justify-content: center;
-  width: 100vw;
- 
+  width: 100%;
+  color: #f5fbef
 }
 
 .about-text{
@@ -238,8 +242,6 @@ html {
   justify-content: center;
   align-items: center; 
   width: 100vw;
-  
-  
 }
 
 .container-pic{
@@ -269,60 +271,55 @@ html {
   align-items: center;    
   height: 100%;            
 }
-.card2{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.experience{
+  background-color:#f5fbef;
+  margin:10px;
+  border-radius: 10px;
 }
 
-
-.arrow{
+.experience-text{
+  margin-top:3%;
   display: flex;
   justify-content: center;
   align-items: center; 
   width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
+  
 }
-.arrowOut {
-    position:absolute;
-    left: 50vw;
-    transform: translateX(-50%);
-    width: 30px;
-    height: 45px;
-    padding: 5px;
-    border-radius: 20px;
-    align-items: center;
-    background-color: #f5fbef;
-    color:#748B75;
-  }
-
-.arrowIn {
-    bottom: inherit;
-    left: inherit;
-    height: 45px;
-    width: 30px;
-    border-radius: 20px;
-    align-items: center;
-    background-color: #748B75;
-    color:#f5fbef; 
+.comp-card{
+  height:60vh;
+  width:250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+}
+.comp-column {
+  margin-bottom: 16px;
+  margin-right:30px;
+  display: flex;
 }
 
-.arrow1{
+.comp-card:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom:15px;
-
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  width: 100%;
+  transition: 0.5s;
+  opacity: 0;
+  
 }
-.arrow2{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top:15px;
 
+.comp-card:hover .overlay {
+  width:auto;
+  height:100%;
+  opacity: 100;
 }
+
 
 
 
@@ -332,6 +329,7 @@ html {
   min-height: 100vh;
   height: 100vw;
   scroll-snap-align: start;
+  color: #f5fbef
 }
 
 
@@ -342,6 +340,7 @@ html {
   min-height: 100vh;
   height: 100%;
   scroll-snap-align: start;
+  color: #f5fbef
  }
 
 /* ------------------Careers Css ------------------*/
@@ -350,17 +349,46 @@ html {
   min-height: 100vh;
   height: 100%;
   scroll-snap-align: start;
+  color: #f5fbef
 }
 
 .robot-container{
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: center; 
-  width: 100vw;
 }
 
 .robot1{
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+
+.carrowOut {
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: #f5fbef;
+  color: #748B75;
+}
+
+.carrowIn {
+  height: 25px;
+  width: 35px;
+  border-radius: 20px;
+  background-color: #748B75;
+}
+
+.carrow2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top:-11px;
 }
