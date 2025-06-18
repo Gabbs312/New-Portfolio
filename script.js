@@ -20,15 +20,6 @@ const sections = document.querySelectorAll('.page-section');
     scrollToSection(currentSectionIndex - 1);
   });
 
-  // Optional: update current section index on manual scroll
-  window.addEventListener('scroll', () => {
-    const offset = window.innerHeight / 2;
-    sections.forEach((section, index) => {
-      const rect = section.getBoundingClientRect();
-      if (rect.top <= offset && rect.bottom >= offset) {
-        currentSectionIndex = index;
-      }
-    });
-  });
+  
 
 

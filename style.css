@@ -222,14 +222,57 @@ html {
 
 /* ------------------about Css ------------------*/
 
-#aboutme , #mywork{
+#aboutme{
   background-color: #5D6E5E;
   min-height: 100vh;
-  height: 100vh;
+  height: 100%;
   scroll-snap-align: start;
+  justify-content: center;
+  width: 100vw;
+ 
 }
-.aboutintrocont{
-  display:flex;
+
+.about-text{
+  margin-top:3%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100vw;
+  
+  
+}
+
+.container-pic{
+  background-color: #e1ecde;
+  border-radius:100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.column6 {
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  flex-basis: 100%;
+  display: flex;
+}
+.card2 ,.card3 {
+  width: 100%;
+  padding: 10px;
+}
+
+.card3{
+  margin-left:3%;
+  display: flex;
+  justify-content: left; 
+  align-items: center;    
+  height: 100%;            
+}
+.card2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -244,7 +287,6 @@ html {
 }
 .arrowOut {
     position:absolute;
-    margin-bottom: 10px;
     left: 50vw;
     transform: translateX(-50%);
     width: 30px;
@@ -282,20 +324,43 @@ html {
 
 }
 
-#myskills , #careers{
+
+
+/* ------------------My Skills Css ------------------*/
+#myskills {
   background-color: #748B75;
   min-height: 100vh;
   height: 100vw;
   scroll-snap-align: start;
 }
 
-/* ------------------My Skills Css ------------------*/
 
 
-footer{
-  background-color:#f5fbef;
-  color:#5D6E5E;
+/* ------------------My Work Css ------------------*/
+ #mywork{
+  background-color: #5D6E5E;
+  min-height: 100vh;
+  height: 100%;
+  scroll-snap-align: start;
+ }
+
+/* ------------------Careers Css ------------------*/
+#careers{
+  background-color: #748B75;
+  min-height: 100vh;
+  height: 100%;
+  scroll-snap-align: start;
 }
 
+.robot-container{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100vw;
+}
 
-
+.robot1{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
