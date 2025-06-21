@@ -1,5 +1,9 @@
 /* #380c5d */
 
+section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+}
 
 /* ------------------Nav bar ------------------*/
 body::-webkit-scrollbar {
@@ -12,7 +16,10 @@ html {
     width: 100%;
     max-width: 100%;
     scroll-behavior: smooth;
+  }
 
+  html.scroll-locked {
+    overflow: hidden;
   }
   
   body {
@@ -525,6 +532,70 @@ html {
   scroll-snap-align: start;
   color: #f5fbef
  }
+
+ hoverbox{
+  background-color:#859985;
+  margin:10px;
+  border-radius: 10px;
+}
+
+.grid-text{
+  margin-top:3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+ 
+}
+.comp-text-container p{
+  margin:10px;
+}
+.comp-card{
+  height:60vh;
+  width:275px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5D6E5E;
+  border-radius:10px;
+  display: block;
+  overflow:hidden
+}
+.comp-column {
+  margin-bottom: 16px;
+  margin-right:30px;
+  display: flex;
+}
+
+.comp-card:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(245, 251, 239,1);
+  color: #5d6e5e;
+  width: 100%;
+  transition: 0.5s;
+  opacity: 0;
+  border-radius:10px;
+ 
+ 
+}
+
+.comp-card:hover .overlay {
+  width:auto;
+  height:100%;
+  opacity: 100;
+}
+
+.stemetts {
+  width:100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
 
 /* ------------------Careers Css ------------------*/
 #careers{
