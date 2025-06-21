@@ -378,7 +378,7 @@ html {
 }
 .skillsmain{
   width: 100%;
-  display: grid;
+
   grid-template-columns: repeat(2 , 1fr);
   grid-row-gap: 30px;
   grid-column-gap: 50px;
@@ -423,7 +423,7 @@ html {
     width: 0%;
   }
   100%{
-    width: 80%;
+    width: 45%;
   }
 
 }
@@ -457,8 +457,65 @@ html {
   }
 
 }
+.arrows{
+  margin-top:3%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+}
+.column7 {
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  flex-basis: 100%;
+  display: flex;
+}
+.card4 ,.card5 {
+  width: 100%;
+  padding: 10px;
+}
+
+.card5{
+  display: flex;
+  align-items:left;    
+  height: 100%;            
+}
+
+.card4{
+  display: flex;
+  justify-content: flex-end;   
+  height: 100%;            
+}
 
 
+.s-arrowOut {
+ position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 35px;
+  height: 25px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: #f5fbef;
+  color: #748B75;
+  }
+
+.s-arrowIn {
+  height: 25px;
+  width: 35px;
+  border-radius: 20px;
+  background-color: #748B75;
+}
+
+.s-arrow2{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top:-11px;
+  
+}
 
 /* ------------------My Work Css ------------------*/
  #mywork{
