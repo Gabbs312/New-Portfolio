@@ -84,7 +84,7 @@ html {
 }
 .home{
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -186,13 +186,12 @@ html {
   justify-content: center;
   align-items: center; 
   width: 100vw;
-  height: 100vh;
+  height: 60px;
   margin: 0;
   padding: 0;
 }
 .harrowOut {
   position:absolute;
-  bottom:5px;
   left: 50vw;
   transform: translateX(-50%);
   width: 35px;
